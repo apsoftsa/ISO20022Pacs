@@ -1,0 +1,34 @@
+using System;
+using System.Xml;
+
+// ReSharper disable once CheckNamespace
+namespace Iso20022.Model.pacs_008_001_01
+{
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "1.0.0")]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.SerializableAttribute()]
+
+
+    public class Document
+    {
+        [System.Xml.Serialization.XmlElementAttribute("pacs.008.001.01")]
+        public virtual pacs00800101 pacs00800101 { get; set; }
+
+    }
+
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "1.0.0")]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.SerializableAttribute()]
+
+    public class pacs00800101
+    {
+        public virtual GroupHeader2 GrpHdr { get; set; }
+
+        [System.Xml.Serialization.XmlElementAttribute("CdtTrfTxInf")]
+        public virtual CreditTransferTransactionInformation2[] CdtTrfTxInf { get; set; }
+
+    }
+
+}
